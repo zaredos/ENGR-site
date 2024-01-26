@@ -306,6 +306,10 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-height: 75vh; /* Set max width to about a third of the page's width */
+  max-width: 25vw;
 }
 
 table {
@@ -639,6 +643,8 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 576px) {

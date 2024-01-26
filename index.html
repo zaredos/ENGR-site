@@ -15,12 +15,12 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">Zared's Engineering Site</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/zaredos">My Github</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -41,14 +41,73 @@
                 <p class="lead">A complete project boilerplate built with Bootstrap</p>
                 <p>Bootstrap v5.2.3</p>
             </div>
+            
+            <h2>Navigation</h2>
+            <h3><a href="#1-25">1-25</a></h2>
         </div>
 
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1>Teste</h1>
+            <div class="container">
+                <div>
+                    <div class="text-center mt-5">
+                        <h1 id="1-25">1/25/24 write-up</h1>
+                    </div>
+                    <h2>Name Tag</h2>
+                    <p>For my first 3D printing assignment, I was tasked with printing a standard name tag using one of the Prusa MINIs. First, I chose a fresh new light blue filament as my base, and changed my name to font Impact, as well as rotated my first and last name separately.</p>
+                    <h2>Printer Settings</h2>
+                    <p>I used the standard printer settings, with 15% infill, 0.2mm print quality, no supports or brim, and Prusament PLA filament. The total print time was about 24 minutes, and I used two separate layers so that I could stop midway through the printing process and swap filament. A photo to the full settings is shown below.</p>
+                    <h2>Outcomes</h2>
+                    <p>The base of the name tag printed perfectly, and so I swapped my filament color and clicked continue. Unfortunately, the print was not secured on the base, and as soon as the printer nozzle lowered to the print, it moved the name tag away from its position, rendering the print a failure. The final print has a small piece of dark filament stuck on the corner of the tag which shows that the filament was indeed changed and dispensed correctly, just the print itself was not secured. I believe there are a few potential causes of this failure:</p>
+                    <ul>
+                        <li>The printer itself was not set up correctly or was broken and cannot properly do filament swap prints</li>
+                        <li>The print was not secured onto the base, and because I took around 30 minutes before swapping filament it had already completely cooled and was loose</li>
+                        <li>Someone had touched the print or printer while I was away</li>
+                    </ul>
+                    <p>Regardless of the cause, I will make sure to keep a better watch over my print especially when using multiple filaments. I have printed in the past but I have never seen this kind of issue appear, and can definitely use this as an opportunity to learn more about the many ways a print can fail.</p>
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/nametag_prusa.png" alt="Nametag">
+                                <p class="caption">Nametag Prusa Settings</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/nametag_top.png" alt="Nametag Top">
+                                <p class="caption">Top of the nametag</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/nametag_bottom.png" alt="Nametag Bottom">
+                                <p class="caption">Bottom of the nametag</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Stress Test</h2>
+                    <p>We were also supposed to print a printer stress test to gain a better understanding of the limitations of what a 3D printer can do, so I decided to use one of the Prusa Minis at the MakerLab. <a href="https://www.thingiverse.com/thing:4964128">This</a> is a stress test I found that tests both how well a printer can print without supports at varying angles, as well as the precision of the printer. The precision is checked by printing both square holes which get increasingly smaller and smaller, as well as a square piece which can fit into less of the square holes as the printer precision and quality grows lesser.</p>
+                    <h2>Printer Settings + Outcomes</h2>
+                    <p>My printer settings were completely unchanged from the name tag settings, which can be seen in the photo below. Once I finished the print, I could tell that none of the angles had printed completely, and some were deformed (especially the steeper angles), which was to be expected since I printed without supports. I used the square fitting tool and could just barely fit it in the hole labeled 0.4mm.</p>
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/stress_prusa.png" alt="Stress Prusa">
+                                <p class="caption">Stress Prusa Settings</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/stress_top.png" alt="Stress Top">
+                                <p class="caption">Stress Top</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/stress_side.png" alt="Stress Side">
+                                <p class="caption">Stress Side</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+        </div>
 
 
 
