@@ -5,3 +5,14 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+function loadContent(pageUrl) {
+    fetch(pageUrl)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('content').innerHTML = html;
+        })
+        .catch(error => {
+            console.error('Error fetching page:', error);
+        });
+}
