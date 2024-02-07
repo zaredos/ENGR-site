@@ -308,8 +308,12 @@ svg {
   vertical-align: middle;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  max-height: 75vh; /* Set max width to about a third of the page's width */
-  max-width: 25vw;
+  max-height: 75vh; 
+  max-width: 25vw; /* Set max width to about a third of the page's width */
+}
+
+.col-md-6 img {
+  max-width: 35vw;
 }
 
 table {
