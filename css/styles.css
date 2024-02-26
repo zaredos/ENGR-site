@@ -313,7 +313,14 @@ svg {
 }
 
 .col-md-6 img {
-  max-width: 35vw;
+  max-width: 40vw;
+  max-height: 60vh;
+}
+
+video {
+  max-height: 50vh;
+  max-width: fit-content;
+  text-align: center;
 }
 
 table {

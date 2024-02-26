@@ -72,6 +72,20 @@
             <p>
                 For project 3, we were prompted to design a CAD box using the software of Fusion360 to create an enclosure for a printed circuit board. We were first tasked to solder components of a kit onto the main circuit board in order to create a device where the diodes(lightbulbs) light up when prompted with any type of sound. The intensity of the external sound would also be measured by the amount of light bulbs lighted up. Our first step was to set up our soldering stations, which included the solder, soldering iron, brass, desoldering pump, magnifying glass and the circuit board. We then proceeded with soldering each component including 11 diodes (longer side on the positive indicating opening), resisters, capacitors, transistors, sound sensor, and an integrated circuit. 
             </p> 
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/circuit.jpg" alt="Circuit board">
+                        <p class="caption">Top-down view of the kit</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/circuit_with_battery.jpg" alt="Circuit with battery">
+                        <p class="caption">The completed circuit with batteries</p>
+                    </div>
+                </div>
+            </div>
+
             <p>
                 After we successfully soldered all of the required components onto the circuit board and attached the battery pack, we inserted the batteries to test out the electronic prototype we assembled. Although the LEDs were turning on, they were continuously flashing on and off with seemingly no connection to the sound sensor. There was obviously something we did wrong with our soldering process, but even after showing it to professor Norton who used a voltage detector and tested out various components, we couldn’t find the issue and eventually gave up.
             </p>
@@ -79,44 +93,126 @@
                 Luckily for us, since we had a kit for each person, we had also started soldering on another kit, and soon after the first failure we had completed the second. After putting in the batteries and testing, it turned out to be a success! Whenever any sound was inputted above a certain intensity, the diode light bulbs would move across in a linear motion until the noise stopped. A video displaying this is shown below.                 
             </p>
 
-            <video width="320" height="240" controls>
-                <source src="assets/box_lid.mov">
+            <video controls>
+                <source src="assets/circuit_test.MOV">
                 Your browser does not support the video tag.
             </video>
-
-            <!-- Add any images or diagrams related to the soldering process -->
 
             <!-- Pre-print CAD Design Process -->
             <h2>Pre-print CAD Design Process</h2>
             <p>
                 After finishing the soldering process and verifying the board works, we took measurements of the dimensions of what the total circuit board should be, which was turned out to be 6.4cm (circuit kit length) x 4.75cm (max length of the battery container) x 1.5cm (height of both combined - since we planned to stack both on top of each other). We also took measurements of the circuit board length (2.5cm), speaker diameter (1cm), the distances from the right edge and bottom of the circuit board to the center of the speaker, as well as a top-down view photo of the board itself (for approximate locations of the diode LEDs). The idea was to have an enclosure large enough to fit both the battery container and circuit board snugly stacked onto each other, with a removable lid on one side for battery replacement and cut outs on the other side which show the LED diodes and sound sensor. Some of our sketches and thought process of how the design should look are below.
             </p>
-            <!-- Insert sketches here -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/sketch.jpg" alt="Sketch 1">
+                        <p class="caption">Sketch 1</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/sketch2.JPG" alt="Sketch 2">
+                        <p class="caption">Sketch 2</p>
+                    </div>
+                </div>
+            </div>
+
             <p>
                 After taking necessary measurements, it was time to design the box in Fusion360. We created a base box which would hold the components, in which we took each previous measurement and added 10mm (5mm for each side length) as well as an extra 0.3mm for fitting, which ended up as a 74.3mm x 57.8mm x 35.0mm box. Then, we used the shell tool which allowed us to hollow out the box, and set the wall length to 5mm on each side. Now that the box was an empty hollow shell, we could start working on the lid. We initially were planning on using <a href="https://www.thingiverse.com/thing:468917">this design</a> but after converting it into separate bodies in order to modify the separate parts we realized that it was too complex and it would be better to just create our own design. Instead, we decided to create a new sketch and created a new body which would form the opening for our lid. We made this body just a few millimeters thinner than the width of the box so it would fit snugly, and extended it to the point where it would just reach the length of the box. After using the extrude tool and performing a cut operation, there was now a thin ridge which could hold the new lid. We created a second body that was slightly smaller than the ridge which we created (~0.2mm on each side for fitting) and the lid was finished. 
             </p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/lid1.png" alt="Lid photo 1">
+                        <p class="caption">Using the extrude tool to create the lid chamber</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/lid2.png" alt="Lid photo 2">
+                        <p class="caption">The finished box and lid</p>
+                    </div>
+                </div>
+            </div>
+
             <p>
                 Once the lid was complete, we started to work on circuit design on the bottom. A new sketch was created which would contain all of the required measurements, and first we decided to mark a rectangle in the center which marked where the circuit would go. To do this, we used the pre-measured length and width of the circuit and added 0.3mm to each dimension (64.3mm x 25.3mm). Next, we approximated the placement and size of the sound sensor and LED diode holes, which we did from measurements previously taken in class about the diameter of each and how far the centers were from the bottom and sides. We decided to use a large rectangle for the top LEDs, as well as two circles below for the sound system and 11th LED. Once the layout was complete, we used the extrude tool to cut through the bottom layer, and added two support blocks on the sides of the circuit to keep it in place.
             </p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/circuit_sketch.png" alt="Circuit sketch">
+                        <p class="caption">The sketch for the bottom of the box</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/circuit_box_finished.png" alt="Circuit box finished">
+                        <p class="caption">The completed box in Fusion360</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Printing Process -->
             <h2>Printing Process</h2>
             <p>
                 Once finished and exported, it was time to print. We used PrusaSlicer 2.7.1 to slice the print, adjusting the size and laying the compartment on its bottom. 20% infill was used, with 0.2mm quality settings and organic supports for ease of removal. The finished print took around 6 hours and used almost 23g of filament, but when retrieved we were happy to find that the print was a complete success. However, removing the supports from the thin layer that was the lid was incredibly difficult, and ultimately we were only able to remove the larger pieces sticking out, which made using the lid much less smooth than it should have been.
             </p>
-            <!-- Add any images of the printed objects -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/circuit_box_prusa_settings.png" alt="Prusa settings">
+                        <p class="caption">The settings I used for PrusaSlicer</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/circuit_box_supports.jpg" alt="Circuit box + supports">
+                        <p class="caption">The completed box with supports</p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Updated Lid -->
             <h2>Updated Lid</h2>
             <p>
                 Once finished, we realized that we had forgotten a handle for the lid, and it was impossible to take it out once fully inside. We extended the length of the lid, as well as shrunk it by around 0.1-0.2mm because of the supports making it difficult to slide the lid back and forth. Then, a second part was added to give the hand a place to latch onto, which was perpendicular to the lid itself. Printing was much quicker than the original compartment, and took less than an hour to complete with no issues.
             </p>
-            <!-- Add any images of the updated lid -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/updated_lid_fusion.png" alt="Updated lid fusion360">
+                        <p class="caption">Creating the updated lid in Fusion360</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/updated_lid_prusa.png" alt="Updated lid prusa settings">
+                        <p class="caption">Printing the new lid with the handle</p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Post-print + Outcome -->
             <h2>Post-print + Outcome</h2>
             <p>
                 Once we returned to class the week after, we tested the newly printed objects. The new lid fit perfectly, and unlike the original had some more room to spare and so could smoothly slide back and forth with an attached handle at the end. The battery fit perfectly as it should have, but the circuit board was too long, by about less than a millimeter, and only one side would fit at a time. Unfortunately one of our measurements were probably very slightly off during class, showing the value of precision and the potential for human error. To account for this, next time it would be wise to use more than 0.3mm to the original measurement, if we had used 0.6mm or 0.75mm to account for more error the circuit would have definitely fit and this issue would have been avoided. 
             </p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/circuit_box_with_circuit.jpg" alt="Circuit box with circuit">
+                        <p class="caption">Attempting to fit the kit into the box</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/circuit_box_with_battery.jpg" alt="Circuit box with battery">
+                        <p class="caption">The finished box holding the battery container</p>
+                    </div>
+                </div>
+            </div>
+
+            <video controls>
+                <source src="assets/box_lid.mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">A video showcasing the new lid opening and closing</p>
         </div>
     </div>
 
