@@ -319,7 +319,7 @@ svg {
 
 video {
   max-height: 50vh;
-  max-width: fit-content;
+  max-width: 80vw;
   text-align: center;
 }
 
