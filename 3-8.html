@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Bare - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Zared's Engineering Site</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/zaredos">My Github</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>ENGR 11A Site</h1>
+                <p class="lead">A simple website to store all of my ENGR 11A write-ups in. Created by Zared Cohen.</p>
+                <p>Bootstrap v5.2.3</p>
+            </div>
+            
+            <h2><u>Navigation</u></h2>
+            <h3><a href="1-25.html#1-25">1-25</a></h3>
+            <h3><a href="2-6.html#2-6">2-6</a></h3>
+            <h3><a href="2-27.html#2-27">2-27</a></h3>
+            <h3><a href="3-8.html#3-8">3-8</a></h3>
+        </div>
+        <!-- Page content-->
+
+        <div class="container">
+            <div>
+                <div class="text-center mt-5">
+                    <h1 id="3-8">3/08/24 write-up</h1>
+                </div>
+                <h2>Printing our E-Nable Hand</h2>
+                <p>
+                    For our fourth Engineering project, we were tasked with printing a hand for the E-Nable project. The E-Nable project is a global network of volunteers who use 3D printing to create free prosthetic hands for those in need. The hand we printed was the <a href="https://3d.nih.gov/entries/3DPX-020258">Unlimbited Phoenix Hand</a>, which is a simple and functional design that allows one to use and control the hand with ease. The hand was scaled up to 150% to fit the size of the recipient, and was printed in PLA filament using a large RAISE3D E2 Printer.
+                </p>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/enable_hand_printing.png" alt="Hand Printing">
+                            <p class="caption">The parts of the hand being printed at 150% in IdeaMaker</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/enable_hand_prusa.png" alt="Hand Prusa">
+                            <p class="caption">Printing the wrist part in PrusaSlicer</p>
+                        </div>
+                    </div>
+                </div>
+                <h2>Assembly</h2>
+                <p>
+                    After finalizing our design and successfully printing all of our parts, we started working on the hand itself. We used <a href="https://www.youtube.com/watch?v=CXoVSTgzyec">this video</a> as a guide to assemble the hand. First, we organized all of our printed items, as well as recieved the kit that contained the threads and screws. Once we had assembled the fingers and the palm, we cut parts of some soft foam to act as cushions for the palm and wrist. Once stuck on, we then used a heat gun to mold the printed part to the shape of the palm and wrist, and attached it to the hand with the 3D printed screws.
+                </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/enable_hand_molding.jpg" alt="Hand Molding">
+                            <p class="caption">Molding the part to fit a wrist</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/enable_hand_foam.jpg" alt="Hand Foam">
+                            <p class="caption">Measuring and placing the foam on the new part</p>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Once the hand was fully together, we thread the rubber bands through the joints of the fingers so that they would be tight and able to grip properly. Threading the line through the fingers and making sure that each side was tight enough as to not be loose and yet not too tight that it would be difficult to move proved to be a challenge, but we were able to finish successfully. Once the line was threaded in, we cut it to size and tied it off, and the hand was completely functional, able to grip and hold objects.
+                </p>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/enable_hand_items.jpg" alt="Hand Parts">
+                            <p class="caption">The hand with all of the parts we used</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/enable_hand_bands.jpg" alt="Hand Bands">
+                            <p class="caption">The bands being put into the joints</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Adding a new function to the hand</h2>
+                <p>
+                    After the hand was fully assembled, I was tasked with adding a new function to the hand. I opened up Fusion and imported the hand's STL file to start working on it. I decided to add a small hole on the top of the palm of the hand, where screws could be inserted without disturbing the strings. This was the main part of the new function, which allowed tools to be locked in on the top of the hand which might otherwise be difficult to hold. To show an (extreme) example of this, I attached a knife using the screw on the top of the hand, which could be used by the user to efficiently cut things without having to struggle to hold the knife. After the job is done, the knife can be easily removed and replaced with another tool.
+                </p>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/enable_hand_screw.png" alt="Hand Screw">
+                            <p class="caption">The screw being added to the hand</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/enable_hand_knife.png" alt="Hand Knife">
+                            <p class="caption">The hand with a knife attached</p>
+                        </div>
+                    </div>
+                </div>
+
+                <video controls>
+                    <source src="assets/enable_hand_working.MOV">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="caption">A video showcasing the fully assembled hand opening and closing grip</p>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
